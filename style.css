@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Manrope&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+:root {
+    --bg-color: #000;
+    --textMain-color: #9DB2BF;
+    --tituloDestaque-color: #66347F;
+
+    --font-titulo:'Agdasima', sans-serif;
+    --font-parag:'Manrope', sans-serif;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    color: var(--textMain-color);
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+    
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: var(--font-titulo);
+    font-weight: 600;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+    gap: 82px;
+    
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--font-titulo);
+    color: var(--tituloDestaque-color);
+}
+
+.titulo-destaque {
+    font-weight: 600;
+    color:greenyellow
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--font-parag);
+    font-weight: 500;
+}
+
+.apresentacao__links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.apresentacao__links__subtitulo {
+    font-size: 1.5rem;
+    font-family: var(--font-titulo);
+    color: var(--tituloDestaque-color);
+}
+
+.apresentacao__links__navegacao {
+    font-size: 1.5rem;
+    font-family: var(--font-titulo);
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--tituloDestaque-color);
+    border-radius: 3px;
+    width: 50%;
+    padding: 10px;
+    
+}
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.rodapé {
+    text-align: center;
+    background-color: var(--tituloDestaque-color);
+    font-size: 1.5rem;
+    font-family: var(--font-parag);
+    color:greenyellow;
+    padding: 30px;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 8%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+
+}
+
